@@ -1,0 +1,80 @@
+:root{
+    --cor-1: #800080;
+    --cor-2: #2b58de;
+    --cor-3: #d75413;
+    --cor-4: #eead2d;
+    --cor-5: #17b794;
+    --cor-6: #000000;
+    --cor-7: #ffffff;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 900;
+    color: var(--cor-6);
+}
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+
+}
+main{
+    display: block;
+    background-color: var(--cor-7);
+}
+.container{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+section.module p {
+    margin-bottom: 40px;
+}
+section.module:last-child{
+    margin-bottom: 0;
+}
+
+section.module h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+
+}
+section.module.content{
+    padding: 40px 0;
+    background-color: var(--cor-1);
+}
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+section.module.parallax:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, --cor-2 0, --cor-3 40%, --cor-4 100%);
+}
+section.module.parallax-1{
+    background-image: url(https://img.restaurantguru.com/r553-beverage-Amigo-Paul-Cafe-Bistro.jpg);
+}
+
+section.module.parallax-2{
+    background-image: url();
+}
