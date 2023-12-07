@@ -1,3 +1,5 @@
+/*ASPECTO GERAL*/
+
 :root{
     --cor-1: #800080;
     --cor-2: #2b58de;
@@ -34,9 +36,13 @@ main{
 }
 .container{
     width: 100%;
-    max-width: 700px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 0 20px;
+}
+.container h2{
+    font-size: 30px;
+    margin-top: 10px;
 }
 section.module p {
     margin-bottom: 40px;
@@ -45,44 +51,12 @@ section.module:last-child{
     margin-bottom: 0;
 }
 
-section.module h2{
-    margin-bottom: 40px;
-    font-size: 30px;
-
-}
 section.module.content{
-    padding: 5% 0;
+    padding: 30% 0;
     background-color: var(--cor-7);
 }
 
-.img img{
-  width: 90px;
-  height: 90px;
-  
-}
-.menu {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding-top: 30px;
-    padding-right: 10px;
-    z-index: 9999;
-}
-
-.menu a {
-    margin-right: 25px;
-    color: var(--cor-4);
-    text-decoration: none;
-    letter-spacing: 1px;
-    border-bottom: 2px solid transparent;
-    transition: all 0.55s ease;
-}
-
-.menu :hover {
-    text-decoration: underline;
-}
-
-section.module.parallax{
+section.module.parallax-2{
     box-shadow: 0px 0px 12px 0px black;
     display: flex;
     flex-direction: column;
@@ -95,20 +69,10 @@ section.module.parallax{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-}
-section.module.parallax:after{
-    content: "";
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: 8;
-    background: linear-gradient(to bottom, rgba(0, 0, 0 ,0) 0, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%);
-}
-
-section.module.parallax-2{
     background-image: url(imagens/laranja.jpg);
 }
-section.module.content1{
+
+section.module.content{
     padding: 400px 0;
     background-color: var(--cor-7);
 }
@@ -121,7 +85,7 @@ section.module.parallax h1 {
 
 #header{
     width: 100%;
-    position: fixed;
+    position: absolute;
     color: var(--cor-4);
     background-color: transparent;
     height: 100px;
@@ -134,6 +98,7 @@ section.module.parallax h1 {
     padding-left: 50px;
     width: 60px;
     height: auto;
+
 }
 
 #header ul{
@@ -146,7 +111,7 @@ section.module.parallax h1 {
     padding: 10px;
 }
 
-#bunner{
+#banner{
     height: 100vh; 
     width: 100vw;
 }
@@ -157,3 +122,88 @@ main{
     background-attachment: fixed;
     background-position: center center;
 }
+footer {
+    background-color: var(--cor-1);
+    padding: 20px 0;
+    margin-top: 50px;
+  }
+  .col-md-4 {
+    width: 33.33%;
+    float: left;
+  }
+  
+  h4 {
+    color: var(--cor-4);
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  p {
+    color: var(--cor-4);
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  
+  a {
+    margin-right: 25px;
+    color: var(--cor-4);
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.55s ease;
+}
+
+    a:hover{
+        text-decoration: underline;
+    }
+
+  
+  .copyright {
+    text-align: center;
+  }  
+
+  .button a{
+    color: var(--cor-7);
+    background-color: var(--cor-2);
+    margin-left: 200px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  /*RESPONSIVIDADE*/
+  @media only screen and (max-width: 768px) {
+    #header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #header img {
+      width: 100px;
+      
+    }
+  
+    #header ul {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+  
+    #header li {
+      flex: 1;
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+  
